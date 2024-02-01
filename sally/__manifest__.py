@@ -19,7 +19,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'sale_management'],
+    'depends': ['base', 'sale_management', 'website_sale'],
     
     'application': True,
     'license': "LGPL-3",
@@ -33,6 +33,7 @@
         'views/templates.xml',
         'views/flower_views.xml',
         'views/product_template_views.xml',
+        'views/website_sale_views.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
