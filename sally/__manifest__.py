@@ -3,8 +3,7 @@
     'name': "Flower Shop",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Shop for selling flowers """,
 
     'description': """
         Long description of module's purpose
@@ -20,9 +19,10 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'product'],
+    'depends': ['base', 'sale_management'],
     
     'application': True,
+    'license': "LGPL-3",
     
     
 
@@ -32,6 +32,7 @@
         'views/views.xml',
         'views/templates.xml',
         'views/flower_views.xml',
+        'views/product_template_views.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

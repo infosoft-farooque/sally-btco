@@ -3,9 +3,9 @@
 # from odoo import models, fields, api
 
 
-# class sally(models.Model):
-#     _name = 'sally.sally'
-#     _description = 'sally.sally'
+# class flower(models.Model):
+#     _name = 'flower.flower'
+#     _description = 'flower.flower'
 
 #     name = fields.Char()
 #     value = fields.Integer()

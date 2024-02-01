@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--View Inheritance - Product Template View-->
+
+        <record id="products_template_form_flower" model="ir.ui.view">
+            <field name="name">products.template.form</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='detailed_type']" position="after">
+                    <field name="is_flower" />
+                    <field name="flower_id" />
+                </xpath>
+            </field>
+        </record>
+
+        <!--View Inheritance - Sale Order Lines -->
+
+        <!-- <record id="order_line_flowers" model="ir.ui.view">
+            <field name="name">products.view</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='order_line']/tree/field[@name='product_template_id']" position="attributes">
+                <attribute name="domain">[('sale_ok', '=', True), '|', ('company_id', '=', False), ('company_id', '=',
+                    parent.company_id), ('is_flower', '=', True)]
+                </attribute>
+                </xpath>                
+            </field>
+        </record> -->
+
+        <!-- Action Windows-->
+
+        <!-- <record id="action_flower_products" model="ir.actions.act_window">
+            <field name="name">Flower Products</field>
+            <field name="res_model">product.template</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('is_flower', '=', True)]</field>
+            <field name="context">{'default_is_flower': 'True'}</field>
+        </record> -->
+
+        <!-- Menu Items-->
+        <!-- <menuitem name="Flowers" id="flower_app_flowers" action="action_flower_products" parent="flower_shop.menu_root"/> -->
+        <!-- <menuitem id="flower_menu" name="Flowers" parent="sally_menu_root" action="sally.flower_shop_action_window"/> -->
+        <!-- <menuitem name="Flower Products" id="product_flower_menu" action="action_flower_products" parent="sale.product_menu_catalog" sequence="5" groups="sales_team.group_sale_salesman"/> -->
+
+        
+        <!-- <menuitem id="product_flower_menu" name="Flower Products" parent="sale.product_menu_catalog" action="action_flower_products" sequence="5" groups="sales_team.group_sale_salesman"/> -->
+
+        
+    </data>
+</odoo>
