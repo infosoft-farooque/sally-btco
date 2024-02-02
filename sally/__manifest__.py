@@ -29,6 +29,8 @@
     # always loaded
     'data': [
         'security/ir.model.access.csv',
+        'data/paperformat.xml',
+        'reports/flower_sale_order_views.xml',
         'views/views.xml',
         'views/templates.xml',
         'views/flower_views.xml',
