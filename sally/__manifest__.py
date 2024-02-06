@@ -30,9 +30,13 @@
     'data': [
         'security/ir.model.access.csv',
         'data/paperformat.xml',
+        'data/groups.xml',
+        'data/server_action.xml',
+        'data/scheduled_action.xml',
         'reports/flower_sale_order_views.xml',
         'views/views.xml',
         'views/templates.xml',
+        'views/flower_stock_lot_view.xml',
         'views/flower_views.xml',
         'views/product_template_views.xml',
         'views/website_sale_views.xml',

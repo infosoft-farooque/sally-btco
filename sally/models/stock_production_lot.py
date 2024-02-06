@@ -4,7 +4,6 @@ from datetime import date
 
 class StockProductionLot(models.Model):
     _inherit = 'stock.lot'
-
     water_ids = fields.One2many('flower.water', 'lot_id')
     is_flower = fields.Boolean("Is Flower", related='product_id.is_flower')
 
