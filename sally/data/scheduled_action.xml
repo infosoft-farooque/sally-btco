@@ -15,7 +15,7 @@
         </field>
     </record>
 
-    <!-- <record id="weather_scheduled_action" model="ir.cron">
+    <record id="weather_scheduled_action" model="ir.cron">
         <field name="name">Check weather</field>
         <field name="interval_number">1</field>
         <field name="interval_type">days</field>
@@ -27,6 +27,6 @@
         <field name="code">
             model.get_forecast_all_warehouses()
         </field>
-    </record> -->
+    </record>
 
 </odoo>

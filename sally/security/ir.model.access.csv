@@ -1,3 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_sally,sally.flower.shop,model_flower_shop,base.group_user,1,1,1,1
 access_sally,sally.flower.water,model_flower_water,base.group_user,1,1,1,1
+sally.access_flower_shop_weather,access_flower_shop_weather,sally.model_flower_shop_weather,base.group_user,1,1,1,1
+sally.access_flower_shop,access_flower_shop,sally.model_flower_shop,base.group_user,1,1,1,1

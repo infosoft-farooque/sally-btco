@@ -33,7 +33,9 @@
         'data/groups.xml',
         'data/server_action.xml',
         'data/scheduled_action.xml',
+        'data/config_parameter.xml',
         'reports/flower_sale_order_views.xml',
+        'views/sale_report_action.xml',
         'views/views.xml',
         'views/templates.xml',
         'views/flower_stock_lot_view.xml',
@@ -41,6 +43,7 @@
         'views/product_template_views.xml',
         'views/website_sale_views.xml',
         'views/flower_water_views.xml',
+        'views/warehouse_weather_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
