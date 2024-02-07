@@ -2,6 +2,7 @@
 <odoo>
     <data>
 
+        <!-- Model Form View-->
         <record id="stock_warehouse_form_inherit" model="ir.ui.view">
             <field name="name">stock_warehouse.form</field>
             <field name="model">stock.warehouse</field>
